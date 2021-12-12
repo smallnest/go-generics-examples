@@ -17,25 +17,21 @@ package type_parameter
 // type ListElement[T any] struct {
 // 	next *ListElement[T]
 // 	val  T
-// 	// Using ListHead[T] here is OK.
-// 	// ListHead[T] refers to ListElement[T] refers to ListHead[T].
-// 	// Using ListHead[int] would not be OK, as ListHead[T]
-// 	// would have an indirect reference to ListHead[int].
 // 	head *ListHead[T]
 // }
 
-// type ListHead2[T any] struct {
-// 	head *ListElement2[T]
-// }
+// // type ListHead2[T any] struct {
+// // 	head *ListElement2[T]
+// // }
 
-// type ListElement2[T any] struct {
-// 	next *ListElement2[T]
-// 	val  T
-// 	head *ListHead2[int]
-// }
+// // type ListElement2[T any] struct {
+// // 	next *ListElement2[T]
+// // 	val  T
+// // 	head *ListHead2[int]
+// // }
 
-// func testListHead2() {
-// 	list := ListHead2[int64]{}
-// 	head := ListElement2[int64]{val: 0, head: &ListHead2[int]{}}
-// 	list.head = &head
-// }
+// // func testListHead2() {
+// // 	list := ListHead2[int64]{}
+// // 	head := ListElement2[int64]{val: 0, head: &ListHead2[int]{}}
+// // 	list.head = &head
+// // }

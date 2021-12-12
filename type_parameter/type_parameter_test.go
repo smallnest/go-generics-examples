@@ -45,3 +45,7 @@ func TestCall(t *testing.T) {
 
 	fmt.Println(resp, err)
 }
+
+func TestBuzz(t *testing.T) {
+	buzz()
+}
