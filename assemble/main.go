@@ -1,5 +1,5 @@
 // gotip tool compile -N -l -S  main.go > main.s
-package g
+package main
 
 import "fmt"
 
@@ -9,7 +9,7 @@ func printGenericType[T any](t T) {
 
 type MyInt int
 
-func run() {
+func main() {
 	printGenericType(100)
 	printGenericType(MyInt(100))
 	printGenericType(int32(100))
