@@ -38,5 +38,5 @@ func (p ABPair[First, _]) First() First   { return p.a }
 func (p ABPair[_, _]) String() {
 }
 
-// func (p ABPair[_, _]) Foobar[K, V any]() {
-// }
+func (p ABPair[_, _]) Foobar[K, V any]() {
+}
