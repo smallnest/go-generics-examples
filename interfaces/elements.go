@@ -6,10 +6,10 @@ import (
 
 type MyInt int
 
-type I0 interface {
-	~MyInt
-	~error
-}
+// type I0 interface {
+// 	~MyInt
+// 	~error
+// }
 
 // func I1[K any, V interface{ K }]() {
 // }
@@ -28,8 +28,8 @@ func I5[K any, V interface{ int | MyInt }]() {
 
 type MyInt2 = int
 
-func I5_2[K any, V interface{ int | MyInt2 }]() {
-}
+// func I5_2[K any, V interface{ int | MyInt2 }]() {
+// }
 
 // func I6[K any, V interface{ int | ~MyInt }]() {
 // }
@@ -59,8 +59,8 @@ func I11[K interface {
 // func I13[K comparable | int]() {
 // }
 
-func I14[K interface{ comparable } | int]() {
-}
+// func I14[K interface{ comparable } | int]() {
+// }
 
 var (
 	_ interface{}
@@ -90,26 +90,26 @@ var (
 			m()
 		}
 	}
-	_ interface {
-		interface {
-			int | ~int
-			m()
-		}
-	}
+	// _ interface {
+	// 	interface {
+	// 		int | ~int
+	// 		m()
+	// 	}
+	// }
 )
 
 // type I14[K int, V any] interface {
 // 	interface{ K }
 // }
 
-type Node interface {
-	Node
-}
+// type Node interface {
+// 	Node
+// }
 
-type Tree interface {
-	TreeNode
-}
+// type Tree interface {
+// 	TreeNode
+// }
 
-type TreeNode interface {
-	Tree
-}
+// type TreeNode interface {
+// 	Tree
+// }

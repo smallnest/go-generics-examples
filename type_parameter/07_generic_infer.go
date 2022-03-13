@@ -4,7 +4,7 @@ type TS[P1 ~int, P2 ~[]P1] struct{}
 
 // var t1 = TS[]{} // 错误！无法推断
 var (
-	t2 = TS[int]{} // 第二个参数推断得出
+	// t2 = TS[int]{} // 第二个参数无法推断得出!!!
 	t3 = TS[int, []int]{}
 	// t4 = TS[int, []string]{} // 错误! 矛盾
 )

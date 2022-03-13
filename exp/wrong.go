@@ -1,8 +1,9 @@
 package exp
 
 import (
-	"constraints"
 	"fmt"
+
+	"golang.org/x/exp/constraints"
 )
 
 func Scale[E constraints.Integer](s []E, c E) []E {
