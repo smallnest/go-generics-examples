@@ -1,0 +1,38 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/smallnest/go-generics-examples/benchmark
+BenchmarkList_Any
+BenchmarkList_Any-8       	16853449	        65.37 ns/op
+BenchmarkList_Any-8       	17276834	        59.49 ns/op
+BenchmarkList_Any-8       	23804530	        46.87 ns/op
+BenchmarkList_Any-8       	20648313	        50.09 ns/op
+BenchmarkList_Any-8       	21227635	        50.10 ns/op
+BenchmarkList_Any-8       	21108086	        48.94 ns/op
+BenchmarkList_Any-8       	21528765	        49.09 ns/op
+BenchmarkList_Any-8       	22642917	        48.81 ns/op
+BenchmarkList_Any-8       	21330867	        49.78 ns/op
+BenchmarkList_Any-8       	21372832	        50.72 ns/op
+BenchmarkList_Generic
+BenchmarkList_Generic-8   	29200306	        39.43 ns/op
+BenchmarkList_Generic-8   	29721546	        39.66 ns/op
+BenchmarkList_Generic-8   	29576713	        38.88 ns/op
+BenchmarkList_Generic-8   	29764519	        38.98 ns/op
+BenchmarkList_Generic-8   	29650982	        39.22 ns/op
+BenchmarkList_Generic-8   	29702725	        39.50 ns/op
+BenchmarkList_Generic-8   	29341646	        39.57 ns/op
+BenchmarkList_Generic-8   	29794263	        39.15 ns/op
+BenchmarkList_Generic-8   	28569189	        40.31 ns/op
+BenchmarkList_Generic-8   	29157086	        39.72 ns/op
+BenchmarkList_Int
+BenchmarkList_Int-8       	30235838	        38.10 ns/op
+BenchmarkList_Int-8       	30086152	        38.55 ns/op
+BenchmarkList_Int-8       	32930242	        38.22 ns/op
+BenchmarkList_Int-8       	29325602	        38.16 ns/op
+BenchmarkList_Int-8       	30017040	        38.93 ns/op
+BenchmarkList_Int-8       	29573980	        38.56 ns/op
+BenchmarkList_Int-8       	28941552	        38.90 ns/op
+BenchmarkList_Int-8       	29788716	        38.40 ns/op
+BenchmarkList_Int-8       	29758675	        38.42 ns/op
+BenchmarkList_Int-8       	29850064	        38.52 ns/op
+PASS
+ok  	github.com/smallnest/go-generics-examples/benchmark	40.932s
