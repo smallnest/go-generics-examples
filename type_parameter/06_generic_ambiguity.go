@@ -7,5 +7,6 @@ type (
 	// T1 [P (C)]struct{} // P(C)
 
 	T3[P interface{ *C }] struct{}
-	T4[P interface{ C }]  struct{}
+	T4[P *C,]             struct{}
+	T5[P interface{ C }]  struct{}
 )
